@@ -40,22 +40,22 @@ body {
   position: relative;
   cursor: pointer;
   border-radius: 10px;
-  width: 300px;
-  height: 100%;
+  width: 100%;
+  margin-bottom: 15px;
   overflow: hidden;
 }
 
 .card-image-main {
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  margin-bottom: 15px;
+  border-radius: 0;
   object-fit: cover;
   display: block;
 }
 
 .overlay {
   position: absolute;
+  inset: 0;
   top: 50%;
   left: 50%;
   bottom: 0;
@@ -68,6 +68,8 @@ body {
   background-color: hsla(178, 100%, 50%, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 10;
+  border-radius: inherit;
 }
 
 .img-container:hover .overlay {
@@ -78,11 +80,6 @@ body {
   width: 40px;
   height: 40px;
   z-index: 200;
-}
-
-.view-icon:hover {
-  cursor: pointer;
-  opacity: 1;
 }
 
 h2 {
