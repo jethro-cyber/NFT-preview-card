@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(./fonts/Outfit_Complete/Fonts/OTF/Outfit-Bold.otf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(./fonts/Outfit_Complete/Fonts/OTF/Outfit-Regular.otf)
+    format("truetype");
+  font-weight: 300;
+}
+
+body {
+  font-family: "Outfit";
+  font-weight: 200;
+  background: hsl(217, 54%, 11%);
+  font-size: 18px;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 13px;
+  width: 320px;
+  margin-left: 40%;
+  margin-top: 4%;
+}
+
+.card-image-main {
+  width: 320px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.card-description p {
+  color: hsl(215, 51%, 70%);
+}
+
+.ETH {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.eth-number {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+.eth-number img {
+  margin-right: 5px;
+}
+
+.days {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+}
+.days img {
+  margin-right: 5px;
+}
+
+.line {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  margin: 20px 0;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  margin-bottom: 8px;
+}
+
+.user img {
+  width: 34px;
+  margin-right: 14px;
+  border-radius: 17px;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.user p {
+  color: hsl(0, 0%, 100%);
+}
+
+.user p span {
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+  .card {
+    width: 250px;
+    margin-left: 50px;
+  }
+
+  .card-image-main {
+    width: 250px;
+  }
+}
